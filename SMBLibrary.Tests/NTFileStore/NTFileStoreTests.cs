@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Threading;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+using NUnit.Framework;
 using SMBLibrary;
 using SMBLibrary.Win32;
 
 namespace SMBLibrary.Tests
 {
-    [TestClass]
+    
     public abstract class NTFileStoreTests
     {
         private INTFileStore m_fileStore;
@@ -27,7 +27,7 @@ namespace SMBLibrary.Tests
             Assert.IsTrue(status == NTStatus.STATUS_SUCCESS);
         }
 
-        [TestMethod]
+        [Test]
         public void TestCancel()
         {
             object handle;

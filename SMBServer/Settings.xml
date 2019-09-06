@@ -3,10 +3,11 @@
   <Shares>
     <Share Name="Shared" Path="C:\Shared">
       <ReadAccess Accounts="*"></ReadAccess>
-      <WriteAccess Accounts="Admin,Test"></WriteAccess>
+      <WriteAccess Accounts="Admin,Test,administrator"></WriteAccess>
     </Share>
   </Shares>
   <Users>
+    <User AccountName="administrator" Password="admin"></User>
     <User AccountName="Admin" Password="admin"></User>
     <User AccountName="Guest" Password=""></User>
     <User AccountName="Test" Password="test"></User>
